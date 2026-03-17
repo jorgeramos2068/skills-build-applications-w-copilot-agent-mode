@@ -36,7 +36,7 @@ Monitors the correctness of code edits and terminal command output and iterates 
 1. Before we continue let's take a moment to familiarize ourselves with the project folder.
 
    - The left navigation bar is where you can access the file explorer, debugger, and search.
-   - The lower panel (Ctrl+J) shows the debugger output, allows running terminal commands, and allows configuring the web service ports.
+   - The lower panel (Ctrl+J) shows the debugger output, allows running terminal commands.inal commands, and allows configuring the web service ports.
    - Our docs folder contains the another sample application repository that will give Copilot agent mode context to build your application. More on that in the next steps!
 
 1. At the top of VS Code, locate and click the Copilot icon to open a Copilot Chat panel.
