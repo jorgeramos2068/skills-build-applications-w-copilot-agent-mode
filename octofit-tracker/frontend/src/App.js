@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
 import Users from './components/Users';
 import Activities from './components/Activities';
