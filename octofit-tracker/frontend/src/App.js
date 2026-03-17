@@ -7,6 +7,7 @@ import Activities from './components/Activities';
 import Teams from './components/Teams';
 import Leaderboard from './components/Leaderboard';
 import Workouts from './components/Workouts';
+import Register from './components/Register';
 
 function App() {
   console.log('OctoFit Tracker App initialized');
@@ -62,6 +63,11 @@ function App() {
                 <li className="nav-item">
                   <Link className="nav-link" to="/workouts">
                     Workouts
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/register">
+                    Register
                   </Link>
                 </li>
               </ul>
@@ -126,6 +132,7 @@ function App() {
             <Route path="/teams" element={<Teams />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
             <Route path="/workouts" element={<Workouts />} />
+            <Route path="/register" element={<Register />} />
           </Routes>
         </div>
 

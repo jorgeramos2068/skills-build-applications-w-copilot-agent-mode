@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from .views import UserViewSet, TeamViewSet, ActivityViewSet, LeaderboardViewSet, WorkoutViewSet
+from .views import UserViewSet, TeamViewSet, ActivityViewSet, LeaderboardViewSet, WorkoutViewSet, register_user
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
@@ -41,10 +41,12 @@ def api_root(request):
         'activities': f'{base_url}activities/',
         'leaderboard': f'{base_url}leaderboard/',
         'workouts': f'{base_url}workouts/',
+        'register': f'{base_url}register/',
     })
 
 urlpatterns = [
     path('', api_root, name='api-root'),
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+    path('api/register/', register_user, name='register'),
 ]
